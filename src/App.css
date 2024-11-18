@@ -1,0 +1,68 @@
+@import url('https://fonts.google.com/specimen/Titillium+Web');
+
+.App {
+  text-align: center;
+}
+
+body{
+  font-family: 'Titillium Web';
+  font-size: 22px;
+}
+
+
+.content {
+  margin-top: 60px; /* Push content below the fixed navbar */
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 40px;
+}
+
+
+.main-template {
+  background-color: #171717;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 8px; 
+  width: 100%; 
+  padding: 8px; 
+  box-sizing: border-box; 
+}
+
+.grid-item {
+  position: relative;
+  width: 100%; 
+  padding-top: 150%; 
+  overflow: hidden; 
+  border-radius: 4px; 
+  background: #171717; 
+}
+
+.grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  max-height: 80%;
+  object-fit: cover; 
+  border-radius: 4px; 
+}
+
+.grid-item-title {
+  margin-top: 4px; 
+  font-size: 12px; 
+  color: #fff; 
+  text-align: left; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
